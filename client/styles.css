@@ -75,6 +75,7 @@ h2{
 
 .switch{
     border: none;
+    cursor: pointer;
 }
 
 .submit{
@@ -88,17 +89,23 @@ h2{
 }
 
 .submit:hover{
+    cursor: pointer;
     color: var(--bg);
     background-color: var(--highlight);
     border: 0.2rem solid var(--highlight);
+    transition: 0.2s;
 }
 
 .submit:active{
     filter: brightness(120%);
 }
 a:link{
-    color: var(--fg)
+    color: var(--fg);
 }
 a:visited{
-    color: var(--fg)
+    color: var(--fg);
+}
+
+#db{
+    color: var(--highlight);
 }

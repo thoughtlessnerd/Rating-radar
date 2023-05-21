@@ -9,22 +9,22 @@
   <script src="script.js"></script>
 </head>
 <body>
+
   <div class="header">
     <h1 class="logo">Rating Radar</h1>
     <div class="links">
-      <a href="/client/index.html">About</a>
-      <a href="/client/signup.html">Get Started</a>
+      <a href="/client/index.html">About</a>  
+      <a href="/client/index.html">Get Started</a>
     </div>
   </div>
   
-  
-  <h2>Login to view your Dashboard</h2>
+  <h2>Login to view your <span id="db">Dashboard</span></h2>
 
   <div class="main">
     <div class="form" id="login-form">
       <h2 class="form-title">Login</h2>
       <div id="login-error-message" class="form-message error-message" style="display: none;">Error message</div>
-      <input type="text" id="login-username" placeholder="Username" />
+      <input type="text" id="login-username" placeholder="Username" autofocus/>
       <input type="password" id="login-password" placeholder="Password" />
       <button class="submit">Login</button>
       <button class="switch" onclick="switchForm('signup')">No Account ? Sign Up</button>
@@ -33,7 +33,7 @@
     <div class="form" id="signup-form" style="display: none;">
       <h2 class="form-title">Sign Up</h2>
       <div id="signup-error-message" class="form-message error-message" style="display: none;">Error message</div>
-      <input type="text" id="signup-username" placeholder="Username" />
+      <input type="text" id="signup-username" placeholder="Username"/>
       <input type="email" id="signup-email" placeholder="Email" />
       <input type="password" id="signup-password" placeholder="Password"/>
       <button class="submit">Sign Up</button>
